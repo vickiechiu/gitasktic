@@ -21,7 +21,7 @@ demo_gui = True
 beh = True
 eeg = True
 debug = False
-
+fullscr = False
 
 ##############################
 ### (1).Imports and Setups ###
@@ -96,7 +96,7 @@ if beh:
 
     ## Initiate Window
     # using the exp_mon object above, and use degree as units.
-    win = visual.Window(monitor = exp_mon, units = "deg", fullscr = True,
+    win = visual.Window(monitor = exp_mon, units = "deg", fullscr = fullscr ,
                         allowGUI = False, color = "black")
 
     ## stimulus
@@ -450,10 +450,9 @@ def exp(blocks, config, glob_t, instruct):
 ## (3).Excute Experiment ##
 ###########################
 if __name__ == "__main__":
-    if beh:
-        # Run Experiment
-        exp(blocks, config, glob_t, instruct)
-        # debug
-        if debug:
-            exp_end = glob_t.getTime()
-            print(f" Total Experimental Run time began : {mm_time} \n End : {exp_end}")
+    # Run Experiment
+    exp(blocks, config, glob_t, instruct)
+    # debug
+    if debug:
+        exp_end = glob_t.getTime()
+        print(f" Total Experimental Run time began : {mm_time} \n End : {exp_end}")
