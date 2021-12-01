@@ -1,7 +1,8 @@
 # Monitor parameters
 MON_DISTANCE = 60             # Distance between subject's eyes and monitor
 MON_WIDTH = 50                # Width of your monitor in cm
-MON_SIZE = [1920, 1080]        # Pixel-dimensions of your monitor
+#MON_SIZE = [1920, 1080]        # Pixel-dimensions of your monitor
+MON_SIZE = [800, 600]        # Pixel-dimensions of your monitor
 SAVE_FOLDER = 'log'           # Log is saved to this folder. The folder is created if it does not exist.
 
 # Window parameters
