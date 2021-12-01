@@ -26,6 +26,7 @@ fullscr = False
 ##############################
 ### (1).Imports and Setups ###
 ##############################
+
 ## Local import ##
 import config                       # expermental variables
 import extra    	                # for logging
@@ -402,12 +403,12 @@ def exp(blocks, config, glob_t, instruct):
             -   Initial instruction
             -   Familarized sample stimulus
             -   Final instructions before experiment begin
-        -   Excute experimental
+        -   Excute formal experimental
 
     Input:
         blocks   : A list of list of dictionary with conditions and trial information
         config   : Configuration file with all specific experimental definition
-        glob_t : Global rt_t
+        glob_t   : Global rt_t
         instruct : Instruction files with all the prompt instructions
     """
     exp_bg = glob_t.getTime()
