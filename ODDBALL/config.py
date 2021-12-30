@@ -26,10 +26,10 @@ NUM_COMMON = 15
 NUM_REPT = 2
 
 # Stimulus and direction set up
-STIMS = ['X', 'O']
+STIMS = ['O','X']
 RESPS = ['F','J']
 RESPS_L = ['f','j']
-MODES = ['X', 'O']
+MODES = ['O','X']
 CONDS = ['common']*NUM_COMMON + ['rare']*NUM_RARE
 
 # Experimental flow control

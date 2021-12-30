@@ -21,7 +21,7 @@ demo_gui = True
 beh = True
 eeg = False
 debug = False
-fullscr = False
+fullscr = True
 
 ##############################
 ### (1).Imports and Setups ###
@@ -221,7 +221,7 @@ def block_prompt(blocks, bn, config):
                                       antialias = True)
 
     # Responds position
-    if (blocks[bn][0]['common_stim'] == 'O') and (blocks[bn][0]['common_resp'] == 'J'):
+    if (blocks[bn][0]['common_stim'] == 'O') and (blocks[bn][0]['common_resp'] == 'K'):
         left_resp_stim.text = f" {blocks[bn][0]['common_stim']}"
         right_resp_stim.text = f" {blocks[bn][0]['rare_stim']}"
     else:
